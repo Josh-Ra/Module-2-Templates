@@ -1,0 +1,84 @@
+body{
+    background-color: lightblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    background-color: rgb(156, 174, 190);
+    border-radius: 10px;
+}
+
+
+a{
+    text-decoration: none;
+}
+.welcomepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.description{
+font-size: 26px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.listh1{
+    font-size: 60px;
+}
+
+.listul{
+    list-style-type: none;
+}
+
+.tech{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.techlinks{
+    text-decoration: none;
+}
+
+.techlink:visited{
+    color: red;
+}
+
+.teamsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.teamdescription{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.teammembers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

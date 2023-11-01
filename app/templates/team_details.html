@@ -1,0 +1,25 @@
+{% extends "team_list.html" %}
+{% block content %} 
+
+
+<div class="teamsection">
+    <a href="/team_list/"><h1 class="teamname"> {{ Team.name }} </h1></a>
+    <div class="teamdescription">
+        <h1>Description:</h1> <br>
+        <p class="teamdescription"> {{ Team.description }} </p>
+    </div>
+
+    <div class="teammmembers">
+        <h1>Members:</h1>
+        <ul>
+            {% for member in Team.members %}
+            <li class="member">{{ member }}</li>
+            {% endfor %}
+        </ul>
+        
+    </div>
+</div>
+
+
+
+{% endblock content %}
