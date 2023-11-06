@@ -19,8 +19,7 @@ from django.urls import path
 from app.views import load_page, load_team_list, load_team_details
 
 urlpatterns = [
-    path("", load_page),
-    path("team_list/", load_team_list),
-    path("team_list/<str:name>/", load_team_details),
+    path("", load_team_list),
+    path("<str:name>/", load_team_details),
     path("admin/", admin.site.urls),
 ]

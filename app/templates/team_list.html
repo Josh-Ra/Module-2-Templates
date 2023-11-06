@@ -4,7 +4,7 @@
     <h1 class="listh1">Teams</h1>
     <ul class="listul">
         {% for tech in technologies %}
-        <a class="techlinks" href="/team_list/{{ tech }}/"><li class="tech">{{ tech }}</li></a>
+        <a class="techlinks" href="/{{ tech }}/"><li class="tech">{{ tech }}</li></a>
         {% endfor %}
     </ul>
 </div>

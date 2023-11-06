@@ -16,8 +16,7 @@ def load_page(request):
 
 def load_team_list(request):
     context = {
-        "random" : random.randint(1, 100), 
-        "technologies": ["Management", "Procurement", "Documentation", "Community"]
+        "technologies": ["management", "procurement", "documentation", "community"]
     }
     return render(request, "team_list.html", context)
 
@@ -35,5 +34,5 @@ def load_team_details(request, name):
     if name.lower() in teams.keys():
         return render(request, "team_details.html", context={"Team":teams[name.lower()]})
 
-
+   
 
